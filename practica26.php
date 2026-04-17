@@ -17,40 +17,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica 26 — Tablas hasta N</title>
+    <title>Práctica 26 - Tablas hasta N</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <h1>Práctica 26 — Tablas hasta N</h1>
-    <a class="back" href="index.php">← Inicio</a>
+    <a href="index.php">← Regresar</a>
 </header>
 
 <main>
-    <p class="page-title">
-        Tablas de multiplicar personalizadas
-        <small>Indica hasta qué número quieres generar las tablas</small>
-    </p>
+    <h2>Tablas de multiplicar personalizadas</h2>
+    <p class="subtitulo">Indica cuántas tablas quieres generar</p>
 
-    <div class="form-card" style="max-width:100%;">
+    <div class="contenedor" style="max-width:100%;">
         <form method="POST" action="practica26.php">
-
-            <div class="form-group" style="max-width:280px;">
+            <div class="campo" style="max-width:250px;">
                 <label for="limite">Número de tablas</label>
                 <input type="number" id="limite" name="limite" min="1"
                        value="<?= htmlspecialchars($vlimite) ?>"
-                       placeholder="Ej. 7" autofocus>
+                       placeholder="Ej. 5" autofocus>
             </div>
-
-            <div class="btn-group">
+            <div class="botones">
                 <button type="submit">Generar tablas</button>
             </div>
-
         </form>
 
         <?php if ($error): ?>
-            <div class="error-box"><?= htmlspecialchars($error) ?></div>
+            <div class="error"><?= htmlspecialchars($error) ?></div>
         <?php elseif ($limite !== null): ?>
             <div class="tablas-wrap">
                 <?php for ($i = 1; $i <= $limite; $i++): ?>
@@ -58,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <h3>Tabla del <?= $i ?></h3>
                         <p>
                             <?php for ($j = 1; $j <= 10; $j++): ?>
-                                <?= $i ?> &times; <?= $j ?> = <?= $i * $j ?><br>
+                                <?= $i ?> x <?= $j ?> = <?= $i * $j ?><br>
                             <?php endfor; ?>
                         </p>
                     </div>

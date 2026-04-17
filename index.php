@@ -3,73 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prácticas 21 al 26 — PHP</title>
+    <title>Prácticas 21 al 26 - PHP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Prácticas 21 al 26</h1>
-    <span class="badge">PHP</span>
+    <h1>Prácticas 21 al 26 — PHP</h1>
 </header>
 
 <main>
-    <p class="page-title">
-        Selecciona una práctica
-        <small>Programación del lado del servidor con PHP</small>
-    </p>
+    <h2>Menú de prácticas</h2>
+    <p class="subtitulo">Programación del lado del servidor con PHP</p>
 
-    <nav class="menu-list">
-
-        <a class="menu-item" href="practica21.php">
-            <div class="num">21</div>
-            <div class="info">
-                <h2>Operaciones aritméticas</h2>
-                <p>Suma, resta, división y exponenciación de dos números.</p>
-            </div>
-        </a>
-
-        <a class="menu-item" href="practica22.php">
-            <div class="num">22</div>
-            <div class="info">
-                <h2>Fórmula general</h2>
-                <p>Solución de ecuaciones cuadráticas ax² + bx + c = 0.</p>
-            </div>
-        </a>
-
-        <a class="menu-item" href="practica23.php">
-            <div class="num">23</div>
-            <div class="info">
-                <h2>Índice de Masa Corporal</h2>
-                <p>Calcula el IMC y determina la clasificación según la OMS.</p>
-            </div>
-        </a>
-
-        <a class="menu-item" href="practica24.php">
-            <div class="num">24</div>
-            <div class="info">
-                <h2>Fecha actual</h2>
-                <p>Muestra la fecha de hoy generada por el servidor en español.</p>
-            </div>
-        </a>
-
-        <a class="menu-item" href="practica25.php">
-            <div class="num">25</div>
-            <div class="info">
-                <h2>Tablas del 1 al 10</h2>
-                <p>Genera las tablas de multiplicar del 1 al 10 con PHP.</p>
-            </div>
-        </a>
-
-        <a class="menu-item" href="practica26.php">
-            <div class="num">26</div>
-            <div class="info">
-                <h2>Tablas hasta N</h2>
-                <p>El usuario indica cuántas tablas de multiplicar generar.</p>
-            </div>
-        </a>
-
-    </nav>
+    <ul class="menu-lista">
+        <li>
+            <a href="practica21.php">
+                <span class="num">21</span>
+                <div>
+                    <div class="titulo">Operaciones aritméticas</div>
+                    <div class="desc">Suma, resta, división y exponenciación</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica22.php">
+                <span class="num">22</span>
+                <div>
+                    <div class="titulo">Fórmula general</div>
+                    <div class="desc">Solución de ecuaciones cuadráticas ax² + bx + c = 0</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica23.php">
+                <span class="num">23</span>
+                <div>
+                    <div class="titulo">Índice de Masa Corporal (IMC)</div>
+                    <div class="desc">Calcula el IMC y su clasificación</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica24.php">
+                <span class="num">24</span>
+                <div>
+                    <div class="titulo">Fecha actual</div>
+                    <div class="desc">Fecha generada por el servidor en español</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica25.php">
+                <span class="num">25</span>
+                <div>
+                    <div class="titulo">Tablas del 1 al 10</div>
+                    <div class="desc">Tablas de multiplicar generadas con PHP</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica26.php">
+                <span class="num">26</span>
+                <div>
+                    <div class="titulo">Tablas hasta N</div>
+                    <div class="desc">Genera tablas según el número que indiques</div>
+                </div>
+            </a>
+        </li>
+    </ul>
 </main>
 
 </body>

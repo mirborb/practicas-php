@@ -1,5 +1,5 @@
 <?php
-$resultado = null;
+$resultado = [];
 $error     = '';
 $va = $vb = $vc = '';
 
@@ -15,18 +15,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($a === false || $b === false || $c === false) {
         $error = 'Los tres campos deben tener valores numéricos.';
     } elseif ($a == 0) {
-        $error = 'El valor de "a" no puede ser 0.';
+        $error = 'El valor de "a" no puede ser cero.';
     } else {
         $disc = ($b * $b) - (4 * $a * $c);
         if ($disc < 0) {
-            $error = 'El discriminante es negativo (' . $disc . '). La ecuación no tiene raíces reales.';
+            $error = 'El discriminante es negativo (' . $disc . '). No hay raíces reales.';
         } elseif ($disc == 0) {
-            $x = -$b / (2 * $a);
-            $resultado = ['Raíz única: x = ' . $x];
+            $resultado[] = 'Raíz única: x = ' . (-$b / (2 * $a));
         } else {
-            $x1 = (-$b + sqrt($disc)) / (2 * $a);
-            $x2 = (-$b - sqrt($disc)) / (2 * $a);
-            $resultado = ['x₁ = ' . $x1, 'x₂ = ' . $x2];
+            $resultado[] = 'x1 = ' . ((-$b + sqrt($disc)) / (2 * $a));
+            $resultado[] = 'x2 = ' . ((-$b - sqrt($disc)) / (2 * $a));
         }
     }
 }
@@ -36,58 +34,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica 22 — Fórmula general</title>
+    <title>Práctica 22 - Fórmula general</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <h1>Práctica 22 — Fórmula general</h1>
-    <a class="back" href="index.php">← Inicio</a>
+    <a href="index.php">← Regresar</a>
 </header>
 
 <main>
-    <p class="page-title">
-        Fórmula general &nbsp;(ax² + bx + c = 0)
-        <small>Ingresa los coeficientes para encontrar las raíces</small>
-    </p>
+    <h2>Fórmula general (ax² + bx + c = 0)</h2>
+    <p class="subtitulo">Ingresa los tres coeficientes de la ecuación</p>
 
-    <div class="form-card">
+    <div class="contenedor">
         <form method="POST" action="practica22.php">
-
-            <div class="form-group">
-                <label for="a">Coeficiente a</label>
+            <div class="campo">
+                <label for="a">Valor a</label>
                 <input type="text" id="a" name="a"
                        value="<?= htmlspecialchars($va) ?>"
-                       placeholder="Valor de a (distinto de 0)" autofocus>
+                       placeholder="Coeficiente a" autofocus>
             </div>
-
-            <div class="form-group">
-                <label for="b">Coeficiente b</label>
+            <div class="campo">
+                <label for="b">Valor b</label>
                 <input type="text" id="b" name="b"
                        value="<?= htmlspecialchars($vb) ?>"
-                       placeholder="Valor de b">
+                       placeholder="Coeficiente b">
             </div>
-
-            <div class="form-group">
-                <label for="c">Coeficiente c</label>
+            <div class="campo">
+                <label for="c">Valor c</label>
                 <input type="text" id="c" name="c"
                        value="<?= htmlspecialchars($vc) ?>"
-                       placeholder="Valor de c">
+                       placeholder="Coeficiente c">
             </div>
-
-            <div class="btn-group">
-                <button type="submit">Calcular raíces</button>
+            <div class="botones">
+                <button type="submit">Calcular</button>
             </div>
-
         </form>
 
         <?php if ($error): ?>
-            <div class="error-box"><?= htmlspecialchars($error) ?></div>
-        <?php elseif ($resultado !== null): ?>
-            <div class="result-box">
-                <?php foreach ($resultado as $linea): ?>
-                    <span><?= htmlspecialchars($linea) ?></span>
+            <div class="error"><?= htmlspecialchars($error) ?></div>
+        <?php elseif ($resultado): ?>
+            <div class="resultado">
+                <?php foreach ($resultado as $r): ?>
+                    <p><?= htmlspecialchars($r) ?></p>
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
