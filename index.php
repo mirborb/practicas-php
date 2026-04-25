@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prácticas 21 al 26 - PHP</title>
+    <title>Prácticas 21 al 32 - PHP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Prácticas 21 al 26 — PHP</h1>
+    <h1>Prácticas 21 al 32 — PHP</h1>
 </header>
 
 <main>
@@ -68,6 +68,51 @@
                 <div>
                     <div class="titulo">Tablas hasta N</div>
                     <div class="desc">Genera tablas según el número que indiques</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica28.php">
+                <span class="num">28</span>
+                <div>
+                    <div class="titulo">Celsius a Fahrenheit</div>
+                    <div class="desc">Convierte temperatura con la fórmula F = C × 9/5 + 32</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica29.php">
+                <span class="num">29</span>
+                <div>
+                    <div class="titulo">Par o Impar</div>
+                    <div class="desc">Determina si un número ingresado es par o impar</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica30.php">
+                <span class="num">30</span>
+                <div>
+                    <div class="titulo">Crear usuario</div>
+                    <div class="desc">Genera un nombre de usuario e iniciales a partir del nombre y apellido</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica31.php">
+                <span class="num">31</span>
+                <div>
+                    <div class="titulo">Edad para votar</div>
+                    <div class="desc">Indica si una persona puede votar según su nombre y edad</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica32.php">
+                <span class="num">32</span>
+                <div>
+                    <div class="titulo">Calculadora de calificaciones</div>
+                    <div class="desc">Convierte una puntuación del 0 al 100 en calificación con letra (A–F)</div>
                 </div>
             </a>
         </li>

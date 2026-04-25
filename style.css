@@ -211,6 +211,32 @@ button[type="submit"]:hover {
     font-weight: normal;
 }
 
+/* Tabla de calificaciones */
+.tabla-calificaciones {
+    margin-top: 20px;
+    max-width: 520px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+.tabla-calificaciones ul {
+    list-style: none;
+    margin-top: 8px;
+}
+
+.tabla-calificaciones li {
+    padding: 3px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tabla-calificaciones li:last-child {
+    border-bottom: none;
+}
+
 /* Tablas de multiplicar */
 .tablas-wrap {
     display: flex;
