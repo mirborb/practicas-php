@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prácticas 21 al 32 - PHP</title>
+    <title>Prácticas 21 al 35 - PHP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Prácticas 21 al 32 — PHP</h1>
+    <h1>Prácticas 21 al 35 — PHP</h1>
 </header>
 
 <main>
@@ -113,6 +113,33 @@
                 <div>
                     <div class="titulo">Calculadora de calificaciones</div>
                     <div class="desc">Convierte una puntuación del 0 al 100 en calificación con letra (A–F)</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica33.php">
+                <span class="num">33</span>
+                <div>
+                    <div class="titulo">Verificación de anagramas</div>
+                    <div class="desc">Comprueba si dos palabras son anagramas entre sí</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica34.php">
+                <span class="num">34</span>
+                <div>
+                    <div class="titulo">Cambio de divisas</div>
+                    <div class="desc">Calcula el tipo de cambio multiplicando una cantidad por una tasa</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica35.php">
+                <span class="num">35</span>
+                <div>
+                    <div class="titulo">Convertidor de tiempo</div>
+                    <div class="desc">Convierte un número de segundos en horas, minutos y segundos</div>
                 </div>
             </a>
         </li>
