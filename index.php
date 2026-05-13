@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prácticas 21 al 35 - PHP</title>
+    <title>Prácticas 21 al 36 - PHP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Prácticas 21 al 35 — PHP</h1>
+    <h1>Prácticas 21 al 36 — PHP</h1>
 </header>
 
 <main>
@@ -140,6 +140,15 @@
                 <div>
                     <div class="titulo">Convertidor de tiempo</div>
                     <div class="desc">Convierte un número de segundos en horas, minutos y segundos</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica36.php">
+                <span class="num">36</span>
+                <div>
+                    <div class="titulo">CRUD de Usuarios</div>
+                    <div class="desc">Registrar, consultar, modificar y eliminar usuarios con PHP y MySQL</div>
                 </div>
             </a>
         </li>
