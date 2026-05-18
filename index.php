@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prácticas 21 al 36 - PHP</title>
+    <title>Prácticas 21 al 37 - PHP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Prácticas 21 al 36 — PHP</h1>
+    <h1>Prácticas 21 al 37 — PHP</h1>
 </header>
 
 <main>
@@ -149,6 +149,15 @@
                 <div>
                     <div class="titulo">CRUD de Usuarios</div>
                     <div class="desc">Registrar, consultar, modificar y eliminar usuarios con PHP y MySQL</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="practica37.php">
+                <span class="num">37</span>
+                <div>
+                    <div class="titulo">Sesiones en PHP</div>
+                    <div class="desc">Login con sesión activa y sección exclusiva para usuarios autenticados</div>
                 </div>
             </a>
         </li>

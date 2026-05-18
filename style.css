@@ -315,6 +315,61 @@ button[type="submit"]:hover {
     border-color: #2e7d32;
 }
 
+/* Sesión */
+.session-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+    max-width: 520px;
+}
+.session-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2e7d32;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.session-welcome { font-size: 12px; color: #777; margin-bottom: 2px; }
+.session-name    { font-size: 15px; font-weight: bold; color: #333; margin-bottom: 2px; }
+.session-email   { font-size: 12px; color: #777; }
+
+.session-content {
+    background: #e8f5e9;
+    border-left: 4px solid #2e7d32;
+    border-radius: 4px;
+    padding: 14px 18px;
+    max-width: 520px;
+    font-size: 13px;
+    color: #1b5e20;
+}
+.session-content strong { display: block; margin-bottom: 6px; font-size: 14px; }
+.session-content p { margin: 0 0 14px 0; line-height: 1.6; }
+
+.session-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.btn-session-link, .btn-session-logout {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 3px;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-session-link   { background: #2e7d32; color: white; }
+.btn-session-logout { background: #fdecea; color: #c62828; border: 1px solid #ef9a9a; }
+.btn-session-link:hover, .btn-session-logout:hover { opacity: .85; }
+
 /* Tablas de multiplicar */
 .tablas-wrap {
     display: flex;
